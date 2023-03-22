@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class VocabularyApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("vocabulary.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(VocabularyApplication.class.getResource("vocabulary.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 382, 400);
         stage.setTitle("Vocabulary");
         stage.setScene(scene);
